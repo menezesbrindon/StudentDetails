@@ -30,7 +30,7 @@ function GridView() {
             <button className="btn-options" onClick={() => handleButtonClick(student.id, 'flag')}>Flag</button>
             <button className="btn-options" onClick={() => handleButtonClick(student.id, 'delete')}>Delete</button>
           </div>
-          <Link to={`/student/${student.id}`} className="view-details">View Details</Link>
+          <Link to={`/StudentDetails/student/${student.id}`} className="view-details">View Details</Link>
         </div>
       ))}
     </div>

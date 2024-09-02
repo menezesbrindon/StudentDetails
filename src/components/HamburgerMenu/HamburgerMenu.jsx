@@ -1,15 +1,28 @@
-// src/components/HamburgerMenu.js
-import React, { useState } from 'react';
+import React, { useRef,useEffect,useState } from 'react';
 import './HamburgerMenu.css';
 import { Link } from 'react-router-dom';
 
 function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
+  const menu=useRef()
 
-  const toggleMenu = () => setIsOpen(!isOpen);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen)
+};
+
+const  handleClickOutside = (e) => {
+    if (menu.current && !menu.current.contains(event.target)) {
+    setIsOpen(false)}
+};
+useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   return (
-    <div className="hamburger-menu">
+    <div className="hamburger-menu" ref={menu}>
       <button onClick={toggleMenu} className="hamburger-button">
         ☰
       </button>

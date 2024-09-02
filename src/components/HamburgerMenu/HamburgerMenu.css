@@ -19,7 +19,7 @@
   }
   
   .menu-content {
-    display: ${props => (props.isOpen ? 'block' : 'none')};
+    display:block;
     position: absolute;
     top: 40px;
     left: 0;
@@ -29,6 +29,10 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
   }
+
+  /* .menu-content .visible{
+    display: block; 
+  } */
   
   .menu-content a {
     display: block;
