@@ -1,0 +1,71 @@
+/* src/styles/components/GridView.css */
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 20px;
+  }
+  
+  .tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+  }
+  
+  .tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .tile h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .tile p {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  
+  .tile-actions {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn-options {
+    background: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin: 2px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn-options:hover {
+    background: #0056b3;
+  }
+  
+  .view-details {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .view-details:hover {
+    text-decoration: underline;
+  }
+  

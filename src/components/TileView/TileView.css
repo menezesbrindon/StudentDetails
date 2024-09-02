@@ -1,0 +1,50 @@
+/* src/styles/components/TileView.css */
+.tile-view {
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  .tile-view h2 {
+    margin-top: 0;
+  }
+  
+  .tile-view p {
+    font-size: 16px;
+  }
+  
+  .tile-actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .btn-options {
+    background: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn-options:hover {
+    background: #0056b3;
+  }
+  
+  a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

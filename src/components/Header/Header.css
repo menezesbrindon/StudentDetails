@@ -1,0 +1,17 @@
+/* src/styles/components/Header.css */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+  }
+  
+  .header .hamburger-menu {
+    flex: 1;
+  }
+  
+  .header .horizontal-menu {
+    flex: 3;
+  }
+  

@@ -1,0 +1,30 @@
+/* src/styles/components/DetailView.css */
+.detail-view {
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  .detail-view h2 {
+    margin-top: 0;
+  }
+  
+  .detail-view p {
+    font-size: 16px;
+  }
+  
+  a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

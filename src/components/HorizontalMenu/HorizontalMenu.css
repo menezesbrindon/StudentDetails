@@ -1,0 +1,21 @@
+/* src/styles/components/HorizontalMenu.css */
+.horizontal-menu {
+    display: flex;
+    justify-content: flex-end;
+    background: #333;
+    padding: 10px 0;
+  }
+  
+  .horizontal-menu a {
+    color: #fff;
+    padding: 14px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .horizontal-menu a:hover {
+    background: #555;
+    border-radius: 5px;
+  }
+  
